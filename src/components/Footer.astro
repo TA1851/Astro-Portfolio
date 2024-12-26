@@ -1,0 +1,60 @@
+---
+const today = new Date();
+const year = today.getFullYear();
+
+// フッターナビゲーションリンク
+const footerLinks = [
+  { text: 'ホーム', url: '/' },
+  { text: '会社概要', url: '/about' },
+  { text: 'サービス', url: '/services' },
+  { text: 'お問い合わせ', url: '/contact' },
+];
+
+// SNSリンク
+const socialLinks = [
+  { platform: 'Twitter', url: 'https://twitter.com/yourcompany', icon: 'fab fa-twitter' },
+  { platform: 'GitHub', url: 'https://github.com/TA1851', icon: 'fab fa-github' },
+  { platform: 'Instagram', url: 'https://instagram.com/yourcompany', icon: 'fab fa-instagram' },
+];
+---
+
+<footer class="bg-gray-900 text-white mt-auto">
+  <div class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">      {/* フッターナビゲーション */}
+      <nav>
+        <h3 class="text-xl font-bold mb-4">サイトマップ</h3>
+        <ul class="space-y-2">
+          {footerLinks.map(link => (
+            <li>
+              <a href={link.url} class="text-gray-300 hover:text-white transition-colors duration-200">
+                {link.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      {/* SNSリンク */}
+      <div>
+        <h3 class="text-xl font-bold mb-4">SNS</h3>
+        <div class="flex space-x-4">
+          {socialLinks.map(social => (
+            <a
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-300 hover:text-green-500 transition-colors duration-200"
+              aria-label={social.platform}
+            >
+              <i class={social.icon}></i>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* コピーライト */}
+    <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+      <p>&copy; {year} All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
