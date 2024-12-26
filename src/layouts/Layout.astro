@@ -4,7 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import NAME from '../components/vue/myname.vue';
-// import ABOUT from '../components/about.vue';
+import ABOUT from '../components/vue/about.vue';
 // import WORKS from '../components/works.vue';
 // import SKILL from '../components/skiils.vue';
 
@@ -32,15 +32,15 @@ const { title, ...props } = Astro.props;
         <NAME client:load/>
       </div>
     </section>
-		<!-- <section>
+		<section>
 			<ABOUT client:load/>
 		</section>
 		<section>
-			<WORKS client:load/>
+			<!-- <WORKS client:load/> -->
 		</section>
 		<section>
-			<SKILL client:load/>
-		</section> -->
+			<!-- <SKILL client:load/> -->
+		</section>
     </main>
     <Footer />
   </body>
