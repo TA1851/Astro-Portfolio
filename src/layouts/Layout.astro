@@ -5,8 +5,8 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import NAME from '../components/vue/myname.vue';
 import ABOUT from '../components/vue/about.vue';
-// import WORKS from '../components/works.vue';
-// import SKILL from '../components/skiils.vue';
+import WORKS from '../components/vue/works.vue';
+import SKILL from '../components/vue/skills.vue';
 
 export interface Props {
 	title?: string;
@@ -36,10 +36,10 @@ const { title, ...props } = Astro.props;
 			<ABOUT client:load/>
 		</section>
 		<section>
-			<!-- <WORKS client:load/> -->
+			<WORKS client:load/>
 		</section>
 		<section>
-			<!-- <SKILL client:load/> -->
+			<SKILL client:load/>
 		</section>
     </main>
     <Footer />
