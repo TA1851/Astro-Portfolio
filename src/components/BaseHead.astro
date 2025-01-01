@@ -6,27 +6,43 @@ interface Props {
 const { title = 'MyPortfolio' } = Astro.props;
 ---
 
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Tailwind CSS -->
+<!-- Tailwind CSS (重複を削除) -->
 <link href="/dist/output.css" rel="stylesheet">
 
 <!-- Google Fonts - Poppins -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<link href="/dist/output.css" rel="stylesheet">
-
-<!-- エラー回避 -->
-<link rel="stylesheet" href="/dist/_astro/output.css">
-
 <!-- AOS Animation -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      disable: false,
+      startEvent: 'DOMContentLoaded',
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
+      offset: 120,
+      delay: 0,
+      duration: 1800,
+      easing: 'ease',
+      once: true,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+    });
+  });
+</script>
 
 <title>{title}</title>
