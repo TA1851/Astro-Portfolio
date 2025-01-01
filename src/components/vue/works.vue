@@ -15,6 +15,18 @@
       <img src="" alt="">
       <img src="" alt="">
   </div>
+  <div class="card flex mt-20">
+    <img src="https://via.placeholder.com/300" alt="Card Image" class="card-img">
+    <div class="card-content">
+      <h2 class="card-title">Card Title</h2>
+      <p class="card-description text-gray-200 ml-4">
+        このポートフォリオサイト<br>
+        このポートフォリオサイトはAstro.jsにVue3とTailwindCSSを使用して作成しました。<br>
+        アニメーションはAOS.jsを使用しています。
+      </p>
+      <a href="#" class="card-button text-gray-100">Read More</a>
+    </div>
+  </div>
 </template>
 
 <script>

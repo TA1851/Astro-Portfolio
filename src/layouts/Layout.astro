@@ -27,7 +27,7 @@ const { title, ...props } = Astro.props;
     mb-32: セクション間の下マージンを8rem（128px）に設定
     container mx-auto px-4: コンテンツを中央寄せし、左右にパディングを追加
     -->
-    <section id='about' class="mt-20 min-h-screen flex items-center justify-center relative">
+    <section id='top' class="mt-20 min-h-screen flex items-center justify-center relative">
       <div class="top-72">
         <NAME client:load/>
       </div>
@@ -35,7 +35,7 @@ const { title, ...props } = Astro.props;
 		<section>
 			<ABOUT client:load/>
 		</section>
-		<section>
+		<section class="mt-10">
 			<WORKS client:load/>
 		</section>
 		<section>
