@@ -1,11 +1,21 @@
 <template>
+  <!-- VBA Section -->
   <div
-    data-aos="fade-right"
-    data-aos-duration="1800"
-    data-aos-delay="400"
+    data-aos="flip-down"
+    data-aos-duration="2000"
+    data-aos-delay="500"
     data-aos-once="true"
+    class="border border-purple-300 flex flex-wrap custom:mx-5 mb-3"
   >
-  <h2 class="secondary-title text-center custom:mx-5 text-5xl text-green-300 mb-10">SKILLS</h2>
+    <div class="flex">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiLz48cGF0aCBmaWxsPSIjNjQ4M2MwIiBkPSJtMTAuNDU3IDExLjA5Mmw1LjU1NyAyLjc0N3Y0LjQ2OGwtNS41NTctMi45MjV6Ii8+PHBhdGggZD0ibTE2LjIgMTguNjEzbC01LjkyNi0zLjEyVjEwLjhsNS45MjYgMi45MjRabS01LjU1OC0zLjM0M0wxNS44MyAxOHYtNC4wNDdsLTUuMTg4LTIuNTY0WiIvPjxwYXRoIGZpbGw9IiM2NDgzYzAiIGQ9Ik0xNi4zNzEgMTMuODM5djQuNDY4bDQuOTQ0LTIuNDkzdi00LjQ2eiIvPjxwYXRoIGQ9Ik0xNi4xODYgMTguNjA3di00Ljg4Mmw1LjMxMy0yLjY3djQuODczWm0uMzY5LTQuNjU1djQuMDU1TDIxLjEzIDE1Ljd2LTQuMDQ3WiIvPjxwYXRoIGZpbGw9IiM2NDgzYzAiIGQ9Im0xMC43MDMgMTAuNzk3bDUuNDgzIDIuNzgzbDQuODk2LTIuNTE2bC01LjMwNS0yLjY3NXoiLz48cGF0aCBkPSJtMTYuMTg3IDEzLjc4OGwtNS45LTNsNS41LTIuNjA4bDUuNzA5IDIuODc5Wk0xMS4xMjIgMTAuOGw1LjA2NCAyLjU3bDQuNDktMi4zMDhsLTQuOS0yLjQ3MVoiLz48cGF0aCBmaWxsPSIjOTUyNzgxIiBkPSJtMTguOTU3IDE1LjgyOWw1LjU1OCAyLjc0NnY0LjQ2OGwtNS41NTgtMi45MjV6Ii8+PHBhdGggZD0ibTI0LjcgMjMuMzQ5bC01LjkyNi0zLjEydi00LjdMMjQuNyAxOC40NlptLTUuNTU3LTMuMzQzbDUuMTg4IDIuNzMxdi00LjA0OGwtNS4xODgtMi41NjRaIi8+PHBhdGggZmlsbD0iIzk1Mjc4MSIgZD0iTTI0Ljg3MSAxOC41NzV2NC40NjhsNC45NDQtMi40OTN2LTQuNDZ6Ii8+PHBhdGggZD0iTTI0LjY4NyAyMy4zNDN2LTQuODgyTDMwIDE1Ljc5MXY0Ljg3M1ptLjM2OS00LjY1NXY0LjA1NWw0LjU3NS0yLjMwOHYtNC4wNDZaIi8+PHBhdGggZmlsbD0iIzk1Mjc4MSIgZD0ibTE5LjIwMyAxNS41NDZsNS40ODQgMi43ODNsNC44OTYtMi41MTdsLTUuMjE5LTIuNDY2eiIvPjxwYXRoIGQ9Im0yNC42ODcgMTguNTM2bC01LjkyLTMuMDA1bDUuNi0yLjM4N0wzMCAxNS44MDVaTTE5LjY0IDE1LjU2bDUuMDQ2IDIuNTYxbDQuNDc5LTIuM2wtNC44MDYtMi4yN1oiLz48cGF0aCBmaWxsPSIjZDg3YjMwIiBkPSJtMi4xOSAxNS40OTZsNS41NTggMi43NDd2NC40NjhMMi4xOSAxOS43ODZ6Ii8+PHBhdGggZD0iTTcuOTMyIDIzLjAxN0wyLjAwNiAxOS45di00LjdsNS45MjYgMi45MjlabS01LjU1Ny0zLjM0M2w1LjE4OCAyLjczMXYtNC4wNDhsLTUuMTg4LTIuNTY0WiIvPjxwYXRoIGZpbGw9IiNkODdiMzAiIGQ9Ik04LjEwNCAxOC4yNDN2NC40NjhsNC45NDQtMi40OTN2LTQuNDZ6Ii8+PHBhdGggZD0iTTcuOTIgMjMuMDExdi00Ljg4Mmw1LjMxMy0yLjY3djQuODczWm0uMzY5LTQuNjU1djQuMDU1bDQuNTc1LTIuMzExdi00LjA0M1oiLz48cGF0aCBmaWxsPSIjZDg3YjMwIiBkPSJtMi40MzYgMTUuMjEzbDUuNDg0IDIuNzg0bDQuODk2LTIuNTE3bC01LjIxOS0yLjQ2NnoiLz48cGF0aCBkPSJNNy45MiAxOC4yTDIgMTUuMmw1LjYtMi4zODdsNS42MzIgMi42NjFabS01LjA0Ny0yLjk3Mmw1LjA0NiAyLjU2MWw0LjQ3OS0yLjNsLTQuODA2LTIuMjdaIi8+PHBhdGggZmlsbD0iI2UwZDQwMCIgZD0ibTEwLjg3NSAxNi4yOTZsNS41NTcgMi43NDZ2NC40NjlsLTUuNTU3LTIuOTI2eiIvPjxwYXRoIGQ9Ik0xNi42MTcgMjMuODE2TDEwLjY5MSAyMC43VjE2bDUuOTI2IDIuOTI5Wm0tNS41NTctMy4zNDJsNS4xODggMi43MzF2LTQuMDQ4bC01LjE4OC0yLjU2NFoiLz48cGF0aCBmaWxsPSIjZTBkNDAwIiBkPSJNMTYuNzg5IDE5LjA0MnY0LjQ2OWw0Ljk0NC0yLjQ5NHYtNC40NnoiLz48cGF0aCBkPSJNMTYuNiAyMy44MTF2LTQuODgybDUuMzEzLTIuNjd2NC44NzNabS4zNjktNC42NTV2NC4wNTVsNC41OC0yLjMxMXYtNC4wNDNaIi8+PHBhdGggZmlsbD0iI2UwZDQwMCIgZD0ibTExLjEyMSAxNi4wMDFsNS40ODQgMi43ODNsNC44OTYtMi41MTdsLTUuMzA1LTIuNjc0eiIvPjxwYXRoIGQ9Im0xNi42MDUgMTguOTkxbC01LjktM2w1LjUtMi42MDhsNS43MDkgMi44NzlabS01LjA2NS0yLjk4NWw1LjA2NCAyLjU3bDQuNDktMi4zMDhsLTQuOS0yLjQ3MVoiLz48L3N2Zz4=">
+      <div class="mt-2">
+        <h3>VBA</h3>
+        <p class="justify-content items-center py-4 text-gray-100">
+          業務効率化のために習得しました。一番最初に触れた言語で、データのクレンジングやグラフ作成の自動化を行いました。<br>
+        </p>
+      </div>
+    </div>
   </div>
   <!-- Python Section -->
   <div
@@ -18,10 +28,9 @@
     <div class="flex">
       <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDMyIDMyIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiLz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InZzY29kZUljb25zRmlsZVR5cGVQeXRob24wIiB4MT0iLTEzMy4yNjgiIHgyPSItMTMzLjE5OCIgeTE9Ii0yMDIuOTEiIHkyPSItMjAyLjg0IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDE4OS4zOCAwIDAgMTg5LjgxIDI1MjQzLjA2MSAzODUxOS4xNykiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzODdlYjgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzNjY5OTQiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0idnNjb2RlSWNvbnNGaWxlVHlwZVB5dGhvbjEiIHgxPSItMTMzLjU3NSIgeDI9Ii0xMzMuNDk1IiB5MT0iLTIwMy4yMDMiIHkyPSItMjAzLjEzMyIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxODkuMzggMCAwIDE4OS44MSAyNTMwOS4wNjEgMzg1ODMuNDIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZlMDUyIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZjMzMxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCN2c2NvZGVJY29uc0ZpbGVUeXBlUHl0aG9uMCkiIGQ9Ik0xNS44ODUgMi4xYy03LjEgMC02LjY1MSAzLjA3LTYuNjUxIDMuMDd2My4xOWg2Ljc1MnYxSDYuNTQ1UzIgOC44IDIgMTYuMDA1czQuMDEzIDYuOTEyIDQuMDEzIDYuOTEySDguMzN2LTMuMzYxcy0uMTMtNC4wMTMgMy45LTQuMDEzaDYuNzYyczMuNzcyLjA2IDMuNzcyLTMuNjUyVjUuOHMuNTcyLTMuNzEyLTYuODQyLTMuNzEyWm0tMy43MzIgMi4xMzdhMS4yMTQgMS4yMTQgMCAxIDEtMS4xODMgMS4yNDR2LS4wMmExLjIxNCAxLjIxNCAwIDAgMSAxLjIxNC0xLjIxNFoiLz48cGF0aCBmaWxsPSJ1cmwoI3ZzY29kZUljb25zRmlsZVR5cGVQeXRob24xKSIgZD0iTTE2LjA4NSAyOS45MWM3LjEgMCA2LjY1MS0zLjA4IDYuNjUxLTMuMDh2LTMuMThoLTYuNzUxdi0xaDkuNDdTMzAgMjMuMTU4IDMwIDE1Ljk5NXMtNC4wMTMtNi45MTItNC4wMTMtNi45MTJIMjMuNjRWMTIuNHMuMTMgNC4wMTMtMy45IDQuMDEzaC02Ljc2NVM5LjIgMTYuMzU2IDkuMiAyMC4wNjhWMjYuMnMtLjU3MiAzLjcxMiA2Ljg0MiAzLjcxMmguMDRabTMuNzMyLTIuMTQ3QTEuMjE0IDEuMjE0IDAgMSAxIDIxIDI2LjUxOXYuMDNhMS4yMTQgMS4yMTQgMCAwIDEtMS4yMTQgMS4yMTR6Ii8+PC9zdmc+">
       <div class="mt-2">
-        <h3>Python</h3>
+        <h3>VBA</h3>
         <p class="justify-content items-center py-4 text-gray-100">
-          一番触れている言語です。本当にPythonはいろいろなことができて楽しい言語だと思います。<br>
-          FastAPIでブログを作成しました。
+          VBAの次に習得した言語でデータ収集とデータクレンジング、webアプリ開発でFastApiを使用しています。
         </p>
       </div>
     </div>
@@ -39,7 +48,7 @@
           <div class="mt-2">
             <h3>Javascript & Typescript</h3>
             <p class="justify-content items-center py-4 text-gray-100">
-              このサイトをVue3,Vuetify,AOSで作成しました。
+              Vue3,AOSで作成しました。現在はReactを学習中です。
             </p>
           </div>
         </div>
@@ -58,23 +67,6 @@
             <h3>データベース</h3>
             <p class="justify-content items-center py-4 text-gray-100">
               sqLite3
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        data-aos="flip-down"
-        data-aos-duration="3000"
-        data-aos-delay="500"
-        data-aos-once="true"
-        class="border border-purple-300 flex flex-wrap custom:mx-5 mb-3"
-      >
-        <div class="flex">
-          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxyZWN0IHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiBmaWxsPSJub25lIi8+PGcgZmlsbD0ibm9uZSI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9IiMyMzk2ZWQiIHJ4PSI2MCIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xNDEuMTg3IDEyMi4xMjNoMjAuNzE3di0xOC43NDRoLTIwLjcxN3ptLTI0LjY2MiAwaDIwLjcxNnYtMTguNzQ0aC0yMC43MTZ6bS0yNC4xNyAwaDIwLjcxN3YtMTguNzQ0SDkyLjM1NXptLTI0LjE3IDBIODguNDF2LTE4Ljc0NEg2OC4xODZ6bS0yNC42NjIgMEg2NC4yNHYtMTguNzQ0SDQzLjUyM3ptMjQuNjYzLTIyLjY5aDIwLjIyM1Y4MC42OUg2OC4xODZ6bTI0LjE3IDBoMjAuNzE2VjgwLjY5SDkyLjM1NXptMjQuMTY5IDBoMjAuNzE2VjgwLjY5aC0yMC43MTZ6bTAtMjIuNjloMjAuNzE2VjU4aC0yMC43MTZ6TTIyOCAxMTMuNzM5cy04Ljg3OS04LjM4Ni0yNy4xMjktNS40MjZjLTEuOTczLTE0LjMwNS0xNy4yNjQtMjIuNjktMTcuMjY0LTIyLjY5cy0xNC4zMDQgMTcuMjY0LTMuOTQ2IDM2LjUwMWMtMi45NTkgMS40OC03Ljg5MiAzLjQ1My0xNS4yOTEgMy40NTNIMjguNzI2Yy0yLjQ2NyA5LjM3Mi0yLjQ2NyA3MS41MjEgNjUuNjAyIDcxLjUyMWM0OC44MzIgMCA4NS4zMzMtMjIuNjg5IDEwMi41OTctNjQuMTIzQzIyMi41NzQgMTM0Ljk0OCAyMjggMTEzLjczOCAyMjggMTEzLjczOCIvPjwvZz48L3N2Zz4=">
-          <div class="mt-2">
-            <h3>その他技術</h3>
-            <p class="justify-content items-center py-4 text-gray-100">
-              Docker,CSS,HTML
             </p>
           </div>
         </div>
