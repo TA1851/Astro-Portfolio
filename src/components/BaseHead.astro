@@ -12,6 +12,9 @@ const { title = 'MyPortfolio' } = Astro.props;
 <!-- Tailwind CSS (重複を削除) -->
 <link href="/dist/output.css" rel="stylesheet">
 
+<!-- global.cssの読み込み -->
+<link href="/src/styles/global.css" rel="stylesheet">
+
 <!-- Google Fonts - Poppins -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,5 +47,4 @@ const { title = 'MyPortfolio' } = Astro.props;
     });
   });
 </script>
-
 <title>{title}</title>

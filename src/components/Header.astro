@@ -1,5 +1,5 @@
 ---
-
+import '../styles/global.css'
 ---
 
 <header class="bg-slate-700 h-24 fixed top-0 left-0 w-full z-50">
@@ -13,9 +13,13 @@
           <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsPSIjZmRmZGZkIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03Ljk3NiAwQTcuOTc3IDcuOTc3IDAgMCAwIDAgNy45NzZjMCAzLjUyMiAyLjMgNi41MDcgNS40MzEgNy41ODRjLjM5Mi4wNDkuNTM4LS4xOTYuNTM4LS4zOTJ2LTEuMzdjLTIuMjAxLjQ5LTIuNjktMS4wNzYtMi42OS0xLjA3NmMtLjM0My0uOTMtLjg4MS0xLjE3NS0uODgxLTEuMTc1Yy0uNzM0LS40ODkuMDQ4LS40ODkuMDQ4LS40ODljLjc4My4wNDkgMS4yMjQuODMyIDEuMjI0LjgzMmMuNzM0IDEuMjIzIDEuODU5Ljg4IDIuMy42ODVjLjA0OC0uNTM4LjI5My0uODguNDg5LTEuMDc2Yy0xLjc2Mi0uMTk2LTMuNjIxLS44ODEtMy42MjEtMy45NjRjMC0uODguMjkzLTEuNTY2LjgzMi0yLjE1M2MtLjA1LS4xNDctLjM0My0uOTc4LjA5OC0yLjA1NWMwIDAgLjY4NS0uMTk2IDIuMjAxLjgzMmMuNjM2LS4xOTYgMS4zMjItLjI0NSAyLjAwNy0uMjQ1czEuMzcuMDk4IDIuMDA2LjI0NWMxLjUxNy0xLjAyNyAyLjIwMi0uODMyIDIuMjAyLS44MzJjLjQ0IDEuMDc3LjE0NiAxLjkwOC4wOTcgMi4xMDRhMy4xNiAzLjE2IDAgMCAxIC44MzIgMi4xNTNjMCAzLjA4My0xLjg2IDMuNzE5LTMuNjIgMy45MTVjLjI5My4yNDQuNTM4LjczMy41MzggMS40Njd2Mi4yMDJjMCAuMTk2LjE0Ni40NC41MzguMzkyQTcuOTggNy45OCAwIDAgMCAxNiA3Ljk3NkMxNS45NTEgMy41NzIgMTIuMzggMCA3Ljk3NiAwIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=" class="fixed top-9 left-7">
         </a>
       </div>
-      <div class="flex relative">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxwYXRoIGZpbGw9IiNlYWQ3MDUiIGQ9Ik0yNTYgMEMxMTQuNiAwIDAgMTE0LjYgMCAyNTZzMTE0LjYgMjU2IDI1NiAyNTZjNzAuNyAwIDEzNC43LTI4LjYgMTgxLTc1czc1LTExMC40IDc1LTE4MUM1MTIgMTE0LjYgMzk3LjQgMCAyNTYgMG0wIDI1NmMtOTYuNy05Ni43LTE2MC45LTk2LTIwMC44LTcxLjVDODQuNiAxMDEuOSAxNjMuMyA0Mi43IDI1NiA0Mi43YzExNy44IDAgMjEzLjMgOTUuNSAyMTMuMyAyMTMuM2MwIDI1LjEtNC42IDQ5LjEtMTIuNSA3MS41QzQxNi45IDM1MiAzNTIuNyAzNTIuNyAyNTYgMjU2Ii8+PC9zdmc+" class="fixed top-9 left-20 hover:text-green-400">
-      </div>
+      <!-- TODO: ダークモードの実装 -->
+      <!-- <div class="flex relative">
+        <div class="flex relative">
+          <button id="theme-toggle" class="fixed top-9 left-20">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiPjxwYXRoIGZpbGw9IiNlYWQ3MDUiIGQ9Ik0yNTYgMEMxMTQuNiAwIDAgMTE0LjYgMCAyNTZzMTE0LjYgMjU2IDI1NiAyNTZjNzAuNyAwIDEzNC43LTI4LjYgMTgxLTc1czc1LTExMC40IDc1LTE4MUM1MTIgMTE0LjYgMzk3LjQgMCAyNTYgMG0wIDI1NmMtOTYuNy05Ni43LTE2MC45LTk2LTIwMC44LTcxLjVDODQuNiAxMDEuOSAxNjMuMyA0Mi43IDI1NiA0Mi43YzExNy44IDAgMjEzLjMgOTUuNSAyMTMuMyAyMTMuM2MwIDI1LjEtNC42IDQ5LjEtMTIuNSA3MS41QzQxNi45IDM1MiAzNTIuNyAzNTIuNyAyNTYgMjU2Ii8+PC9zdmc+" class="fixed top-9 left-20" alt="Toggle Theme">
+          </button>
+      </div> -->
 
       <!-- 中央のナビゲーション -->
       <nav class="justify-self-center mt-6">
@@ -55,3 +59,25 @@
     </div>
   </div>
 </header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+
+    // 初期テーマの設定
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        // テーマの切り替え
+        document.documentElement.setAttribute('data-theme', newTheme);
+        // ローカルストレージに保存
+        localStorage.setItem('theme', newTheme);
+      });
+    }
+  });
+</script>
