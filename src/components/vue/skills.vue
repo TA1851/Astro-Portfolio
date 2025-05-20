@@ -21,7 +21,8 @@
           <div class="mt-2">
             <h3>VBA</h3>
             <p class="justify-content items-center py-4 text-gray-100">
-              業務効率化のために習得しました。一番最初に触れた言語で、データのクレンジングやグラフ作成の自動化を行いました。<br>
+              一番最初に触れた言語で、業務効率化のために習得しました。データクレンジングやグラフ作成の自動化ツールや<br>
+              ログデータの集計やログ解析を行うためのツールを作成していました。<br>
             </p>
           </div>
       </div>
@@ -39,7 +40,9 @@
           <div class="mt-2">
             <h3>VBA</h3>
             <p class="justify-content items-center py-4 text-gray-100">
-              VBAの次に習得した言語でデータ収集とデータクレンジング、webアプリ開発でFastApiを使用しています。
+              VBAの次に習得した言語で、データ分析や機械学習のために習得しました。<br>
+              業務ではGUI自動化ツールを作成したり、データ収集やサイバーセキュリティプラットフォームの開発を行いました。<br>
+              ブログサービスの開発では、FastAPIを使用してシステムの構築を行いました。
             </p>
           </div>
       </div>
@@ -57,13 +60,14 @@
           <div class="mt-2">
             <h3>Javascript & Typescript</h3>
             <p class="justify-content items-center py-4 text-gray-100">
-              Vue3,AOSで作成しました。現在はReactを学習中です。
+              現在、学習中の言語で、このサイトはVue3,AOSで作成しました。<br>
+              現在はReactを学習中で、ブログサービスの開発ではReact、Nextjsを使用して作成しました。<br>
             </p>
           </div>
       </div>
     </div>
     <!-- DB Section -->
-    <div
+    <!-- <div
       data-aos="flip-down"
       data-aos-duration="3000"
       data-aos-delay="500"
@@ -79,7 +83,7 @@
             </p>
           </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
