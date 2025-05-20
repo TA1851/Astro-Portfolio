@@ -101,9 +101,9 @@ export default {
 <template>
   <div class="skill-container">
     <div
-      data-aos="fade-right"
+      data-aos="fade-up"
       data-aos-duration="1800"
-      data-aos-delay="400"
+      data-aos-delay="600"
       data-aos-once="true"
     >
       <h2 class="secondary-title text-center custom:mx-5 text-5xl text-green-300">SKILLS</h2>
@@ -112,9 +112,9 @@ export default {
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
       <!-- VBA Card -->
       <div
-        data-aos="flip-down"
+        data-aos="fade-up"
         data-aos-duration="2000"
-        data-aos-delay="500"
+        data-aos-delay="800"
         data-aos-once="true"
         class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
       >
@@ -135,9 +135,9 @@ export default {
       
       <!-- Python Card -->
       <div
-        data-aos="flip-down"
+        data-aos="fade-up"
         data-aos-duration="2000"
-        data-aos-delay="600"
+        data-aos-delay="800"
         data-aos-once="true"
         class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
       >
@@ -160,9 +160,9 @@ export default {
       
       <!-- JS&TS Card -->
       <div
-        data-aos="flip-down"
+        data-aos="fade-up"
         data-aos-duration="2000"
-        data-aos-delay="700"
+        data-aos-delay="800"
         data-aos-once="true"
         class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
       >
