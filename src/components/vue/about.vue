@@ -9,12 +9,13 @@
       <h2 class="secondary-title text-center custom:mx-5 text-5xl text-green-300">ABOUT ME</h2>
     </div>
     <div
-      data-aos="fade-up"
+      data-aos="fade-right"
       data-aos-duration="1800"
-      data-aos-delay="400"
+      data-aos-delay="1500"
       data-aos-once="true"
+      class="mt-36"
     >
-      <h2 class="text-xl mt-20 text-gray-100 text-center">
+      <h2 class="text-xl text-gray-100 text-center">
         プログラミングを学び始めたきっかけ
       </h2>
         <p class="mt-5 text-gray-100">
