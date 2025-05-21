@@ -112,9 +112,9 @@ export default {
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-24">
       <!-- VBA Card -->
       <div
-        data-aos="fade-up"
+        data-aos="zoom-in-up"
         data-aos-duration="2000"
-        data-aos-delay="800"
+        data-aos-delay="1000"
         data-aos-once="true"
         class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
       >
@@ -136,9 +136,9 @@ export default {
       </div>
       <!-- Python Card -->
       <div
-        data-aos="fade-up"
+        data-aos="zoom-in-up"
         data-aos-duration="2000"
-        data-aos-delay="800"
+        data-aos-delay="2000"
         data-aos-once="true"
         class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
       >
@@ -161,9 +161,9 @@ export default {
       
       <!-- JS&TS Card -->
       <div
-        data-aos="fade-up"
+        data-aos="zoom-in-up"
         data-aos-duration="2000"
-        data-aos-delay="800"
+        data-aos-delay="3000"
         data-aos-once="true"
         class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
       >
