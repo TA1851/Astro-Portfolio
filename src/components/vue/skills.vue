@@ -173,9 +173,8 @@ export default {
             <h3 class="text-2xl font-bold text-white">Javascript：2024-2025</h3>
           </div>
           <p class="text-gray-100">
-            現在、学習中の言語で、このサイトはAstroプロジェクトでVue3,AOS使い作成しました。
-            Pythonに似たような文法だったため、比較的スムーズに学習できました。
-            ブログサービスの開発ではReact、Nextjsを使用して作成しました。
+            このサイトはAstroプロジェクトでVue3,AOS使い作成しました。
+            Vueを学んだ後にReactとTypeScriptを学習し、ブログサービスの開発ではReact、Nextjsを使用して作成しました。
             個人的に好きな言語なので、今後も学習を続けていきたいと思っています。
           </p>
           <div class="mt-4 flex justify-end space-x-2">
