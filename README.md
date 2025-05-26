@@ -1,48 +1,19 @@
-# Astro Starter Kit: Basics
+## プロジェクト概要
 
-```sh
-npm create astro@latest -- --template basics
-```
+このプロジェクトは、Astro.js・Vue3・Tailwind CSS を用いたポートフォリオサイトです。
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### 仕様技術
+- Astro:5.0.5
+- Vue.js:3.5.13
+- tailwindcss:3.4.16
+- aos:2.3.4
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+- **Astro.js**：静的サイト生成による高速なパフォーマンスと柔軟なコンポーネント構成。
+- **Vue3**：各セクション（about, works, skills など）を Vue コンポーネントで実装し、再利用性と保守性を向上。
+- **Tailwind CSS**：ユーティリティファーストな CSS 設計で、レスポンシブかつモダンなデザインを実現。
+- **AOS（Animate On Scroll）**：各セクションのアニメーション表示。
+- **画像最適化**：public・src/assets 配下での画像管理、最適なパス指定、パフォーマンスを考慮した画像利用。
+- **レスポンシブ対応**：特にスマートフォン（390x844px）での見やすさ・操作性を重視。ハンバーガーメニューの開閉や各セクションのレイアウト調整。
+- **ナビゲーション**：ヘッダーにグローバルナビゲーション、ハンバーガーメニューを実装。
+- **スキル・実績セクション**：カード型レイアウトや画像＋説明のフレックスレイアウトで見やすく整理。
