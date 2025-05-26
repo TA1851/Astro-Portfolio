@@ -1,7 +1,7 @@
 <template>
   <div class="about-container">
     <div
-      data-aos="fade-right"
+      data-aos="fade-up"
       data-aos-duration="1800"
       data-aos-delay="400"
       data-aos-once="true"
@@ -9,7 +9,7 @@
       <h2 class="secondary-title text-center custom:mx-5 text-5xl text-green-300">ABOUT ME</h2>
     </div>
     <div
-      data-aos="fade-right"
+      data-aos="fade-up"
       data-aos-duration="1800"
       data-aos-delay="1500"
       data-aos-once="true"
