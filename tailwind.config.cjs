@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			screens: {
-				'xs': '350px', // 390px以上の画面サイズでのスタイルを定義
+				'xs': '395px', // 390px以上の画面サイズでのスタイルを定義
 			},
 		},
 	},
