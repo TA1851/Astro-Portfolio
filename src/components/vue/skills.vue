@@ -24,10 +24,9 @@
             <h3 class="text-2xl font-bold text-white">VBA：2020-2024</h3>
           </div>
           <p class="text-gray-100">
-            一番最初に触れた言語で、業務効率化のために習得しました。
+            一番最初に触れた言語で、社内の業務効率化のために習得しました。
             環境構築が不要で、教材や情報がありふれていたので学習には困りませんでした。
-            データクレンジングやグラフ作成の自動化ツールやログデータの集計やログ解析を行うためのツールを作成していました。
-            主に製造業と不動産会社での業務効率化を行いました。
+            データクレンジングやグラフ作成ツールやログ集計やログ解析を行うためのツールを作成していました。
           </p>
           <div class="mt-4 flex justify-end">
             <span class="px-3 py-1 bg-green-600 text-white text-sm rounded-full">Excel 自動化</span>
@@ -49,8 +48,8 @@
           </div>
           <p class="text-gray-100">
             VBAの次に習得した言語で、社内SE時代にGUI自動化ツールを作成したり、データ収集してデータの可視化を行っていました。
-            サイバーセキュリティプラットフォームの開発案件では、OpenCTIを使った開発を経験しました。
-            ブログサービスの個人開発では、FastAPIを使用してシステムの構築を行いました。
+            IT業界にジョブチェンジ後は、サイバーセキュリティプラットフォームの開発案件を経験しました。
+            個人開発では、FastAPIを使用してブログシステムの構築を行いました。
           </p>
           <div class="mt-4 flex justify-end space-x-2">
             <span class="px-3 py-1 bg-blue-600 text-white text-sm rounded-full">FastAPI</span>
@@ -58,7 +57,6 @@
           </div>
         </div>
       </div>
-      
       <!-- JS&TS Card -->
       <div
         data-aos="zoom-in-up"
@@ -73,8 +71,8 @@
             <h3 class="text-2xl font-bold text-white">Javascript：2024-2025</h3>
           </div>
           <p class="text-gray-100">
-            このサイトはAstroプロジェクトでVue3,AOS使い作成しました。
-            Vueを学んだ後にReactとTypeScriptを学習し、ブログサービスの開発ではReact、Nextjsを使用して作成しました。
+            AstroプロジェクトでVue3,AOS使いポートフォリオサイトを作成しました。
+            Vueを学んだ後にReactとTypeScriptを学習し、ブログサービスの開発でReact、Nextjsを使用して作成しました。
             個人的に好きな言語なので、今後も学習を続けていきたいと思っています。
           </p>
           <div class="mt-4 flex justify-end space-x-2">
